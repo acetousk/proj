@@ -6,9 +6,9 @@ import { TypographyDemo } from "@/components/TypographyDemo";
 export default function Home() {
   return (
       <div>
-        <Button>Click me</Button>
-        <ModeToggle />
+          <ModeToggle />
           <TypographyDemo />
+
 
       </div>
 

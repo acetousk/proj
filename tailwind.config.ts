@@ -25,4 +25,16 @@ const config: Config = {
   },
   plugins: [require("tailwindcss-animate")],
 };
+
+// Add custom base styles
+config.theme.extend.typography = (theme) => ({
+	DEFAULT: {
+		css: {
+			'h1, h2, h3, h4, h5, h6': {
+				fontWeight: 'bold',
+			},
+		},
+	},
+});
+
 export default config;
