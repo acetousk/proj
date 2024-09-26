@@ -9,7 +9,10 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-  		colors: {
+		fontFamily: {
+			serif: ['var(--font-friz-quadrata)'],
+		},
+		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)'
   		},
