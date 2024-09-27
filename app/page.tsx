@@ -6,11 +6,11 @@ import { TypographyDemo } from "@/components/TypographyDemo";
 export default function Home() {
   return (
       <div>
-          <ModeToggle />
-          <TypographyDemo />
+          <ModeToggle/>
+          <TypographyDemo/>
 
-
+          <div className="paperOverlay"></div>
       </div>
 
-);
+  );
 }
