@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
-import LottieGroovyWalk from "@/components/LottieGroovyWalk"
+// import LottieGroovyWalk from "@/components/LottieGroovyWalk"
+import RiveVehiclesDemo from "@/components/RiveVehiclesDemo"
 
 export default function Home() {
   return (
@@ -33,8 +34,13 @@ export default function Home() {
         <Button variant="link" size="lg">Link Large</Button>
         <Button variant="link" size="icon"/>
 
+
         <div className="flex flex-col w-full justify-center items-center">
-          <LottieGroovyWalk />
+          <RiveVehiclesDemo/>
+        </div>
+
+        <div className="flex flex-col w-full justify-center items-center">
+          {/*<LottieGroovyWalk/>*/}
         </div>
 
       </main>
