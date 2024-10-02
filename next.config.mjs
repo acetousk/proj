@@ -1,5 +1,8 @@
+import withBundleAnalyzer from "@next/bundle-analyzer";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   headers: async () => [
     {
       // cache riv files in the public folder
@@ -40,8 +43,8 @@ const nextConfig = {
   },
 };
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
+const withBundleAnalyzerConfig = withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
-module.exports = withBundleAnalyzer(nextConfig);
+export default withBundleAnalyzerConfig(nextConfig);
