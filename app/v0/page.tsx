@@ -1,11 +1,11 @@
-import dynamic from 'next/dynamic';
+"use client";
 
+import dynamic from 'next/dynamic';
 // Dynamically import RiveVehiclesDemo with SSR disabled
-const RiveVehiclesDemo = dynamic(() => import('@/components/RiveVehiclesDemo'), { ssr: false });
+const Rive = dynamic(() => import("@rive-app/react-canvas"), { ssr: false });
 
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
-import Rive from "@rive-app/react-canvas";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
                 src="https://public.rive.app/community/runtime-files/12310-24184-floaty-loop.riv"
             />
             <Button>
-                <Link href="/dashboard">Dashboard</Link>
+                <Link href="/v0">v0</Link>
             </Button>
         </div>
 

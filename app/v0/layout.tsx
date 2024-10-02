@@ -53,7 +53,7 @@ export default function DashboardLayout({
                 </Link>
                 <Link
                     href="#"
-                    className="text-foreground transition-colors hover:text-foreground"
+                    className="text-muted-foreground transition-colors hover:text-foreground"
                 >
                     Settings
                 </Link>
@@ -102,7 +102,7 @@ export default function DashboardLayout({
                         >
                             Customers
                         </Link>
-                        <Link href="#" className="hover:text-foreground">
+                        <Link href="#" className="text-muted-foreground hover:text-foreground">
                             Settings
                         </Link>
                     </nav>

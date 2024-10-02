@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className="flex flex-col w-full justify-center items-center">
             <Button>
-                <Link href="/dashboard">Dashboard</Link>
+                <Link href="/v0">v0</Link>
             </Button>
         </div>
 
