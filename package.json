@@ -16,7 +16,6 @@
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
-    "eslint-config-next": "13.4.1",
     "next": "13.4.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
@@ -26,8 +25,11 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.2",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
     "cache-loader": "^4.1.0",
     "cross-env": "^7.0.3",
+    "eslint-config-next": "^14.2.14",
     "file-loader": "^6.2.0",
     "url-loader": "^4.1.1"
   }
