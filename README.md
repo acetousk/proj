@@ -1,3 +1,5 @@
+https://freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/
+
 https://ui.aceternity.com/
 https://ui.shadcn.com/
 https://www.framer.com/motion/
