@@ -41,7 +41,7 @@ export default function RiveHero() {
     container: canvasContainerRef,
   } = useRive(
     {
-      src: "/hero_use_case.riv",
+      src: "/proj/hero_use_case.riv",
       artboard: "Hero Demo Listeners Resize",
       stateMachines: "State Machine 1",
       layout: new Layout({
