@@ -1,7 +1,7 @@
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 
 // Dynamically import RiveVehiclesDemo with SSR disabled
-// const RiveVehiclesDemo = dynamic(() => import('@/components/RiveVehiclesDemo'), { ssr: false });
+const RiveVehiclesDemo = dynamic(() => import('@/components/RiveVehiclesDemo'), { ssr: false });
 
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
@@ -15,6 +15,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
         <div className="flex flex-col w-full justify-center items-center">
+            <RiveVehiclesDemo/>
             <Button>
                 <Link href="/dashboard">Dashboard</Link>
             </Button>
