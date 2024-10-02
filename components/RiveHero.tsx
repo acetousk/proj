@@ -17,11 +17,21 @@ import RiveButton from "./RiveButton";
 // @refresh reset
 
 export default function RiveHero() {
+
   const [lastWidth, setLastWidth] = useState(0);
   const [lastHeight, setLastHeight] = useState(0);
 
   const lgQuery = useMediaQuery("only screen and (min-width: 1025px)");
   const prefersReducedMotion = usePrefersReducedMotion();
+
+  // https://github.com/vercel/next.js/discussions/22025
+  // https://github.com/vercel/next.js/blob/043dbc85c8aa227a6ab6d674a58791649ffa5456/packages/next/src/client/link.tsx#L476
+  // const [resolvedHref, resolvedAs] = resolveHref(
+  //     Router,
+  //     "/hero_use_case.riv",
+  //     true
+  // )
+  // console.log(resolvedHref, resolvedAs);
 
   const {
     rive,
