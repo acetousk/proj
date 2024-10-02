@@ -43,8 +43,9 @@ const nextConfig = {
   },
 };
 
-const withBundleAnalyzerConfig = withBundleAnalyzer({
-  enabled: process.env.ANALYZE === "true",
-});
+// TODO: This was used for something, but it's giving me an error
+// const withBundleAnalyzerConfig = withBundleAnalyzer({
+//   enabled: process.env.ANALYZE === "true",
+// });
 
-export default withBundleAnalyzerConfig(nextConfig);
+export default nextConfig;
