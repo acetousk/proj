@@ -5,3 +5,9 @@ https://rive.app/
 
 
 https://lottiefiles.com/
+https://polyhaven.com/models
+
+https://interfaceingame.com/
+
+https://rethinkq.adp.com/history-time-tracking-clocks/
+https://community.sap.com/t5/human-capital-management-blogs-by-members/evolution-of-time-tracking-from-punch-cards-to-automatic-time-tracking/ba-p/13414651
