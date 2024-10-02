@@ -73,7 +73,11 @@ export default function RiveHero() {
   // Pause the animation when the user prefers reduced motion
   useEffect(() => {
     if (rive) {
-      prefersReducedMotion ? rive.pause() : rive.play();
+      if (prefersReducedMotion) {
+        rive.pause();
+      } else {
+        rive.play();
+      }
     }
   }, [rive, prefersReducedMotion]);
 

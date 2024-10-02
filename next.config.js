@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   headers: async () => [
+
     {
       // cache riv files in the public folder
       source: "/:all*(riv)",
