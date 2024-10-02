@@ -5,6 +5,7 @@ const RiveVehiclesDemo = dynamic(() => import('@/components/RiveVehiclesDemo'), 
 
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
+import Rive from "@rive-app/react-canvas";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
         <div className="flex flex-col w-full justify-center items-center">
-            <RiveVehiclesDemo/>
+            <Rive
+                src="https://public.rive.app/community/runtime-files/12310-24184-floaty-loop.riv"
+            />
             <Button>
                 <Link href="/dashboard">Dashboard</Link>
             </Button>
