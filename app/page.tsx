@@ -12,6 +12,7 @@ export default function Home() {
                     <Button><Link href="/v2">v2</Link></Button>
                     <Button><Link href="/v3">v3</Link></Button>
                     <Button><Link href="/v4">v4</Link></Button>
+                    <Button><Link href="/v5">v5</Link></Button>
                 </div>
 
             </main>

@@ -59,9 +59,22 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		// https://blog.logrocket.com/implementing-claymorphism-css/#claymorphism-figma
+		fontFamily: {
+			nunito: ["Nunito", "sans-serif"]
+		},
+		boxShadow: {
+			"clay-card":
+				"inset -10px -10px 20px hsl(302deg 25% 50% / 70%), inset 0 16px 32px hsl(302deg 25% 95%)",
+			"clay-btn":
+				"16px 16px 32px 0 hsl(277deg 50% 65% / 50%), inset -16px -16px 32px 0 hsl(277deg 50% 65%), inset 8px 8px 16px 0 hsl(227deg 65% 75% / 45%)"
+		},
+		dropShadow: {
+			'clay': '35px 35px 35px hsl(302deg 25% 50%)',
+		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require("tailwindcss-claymorphism")],
 };
 export default config;
