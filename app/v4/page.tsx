@@ -17,7 +17,7 @@ const ResponsiveLayout = () => {
 
             <div className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-2 bg-black/20 backdrop-blur-sm pt-2 p-2 rounded-full">
                 <Button variant="ghost" size="icon" asChild className="rounded-full">
-                    <Link href="/v0" className="text-white hover:text-white hover:shadow-clay-btn hover:bg-white/10">
+                    <Link href="/v0" className="text-white hover:text-white hover:shadow-btn hover:bg-white/10">
                         <CircleUserRound className="h-6 w-6"/>
                         <span className="sr-only">User</span>
                     </Link>
