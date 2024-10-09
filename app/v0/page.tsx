@@ -2,7 +2,7 @@
 // import Link from "next/link";
 import RiveHero from "@/components/RiveHero";
 
-export default function Home() {
+export default function V0() {
     return (
         <div>
             <RiveHero />

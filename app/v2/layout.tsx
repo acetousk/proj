@@ -1,35 +1,41 @@
-import Link from "next/link"
-import { CircleUser, Menu, Package2, Search } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import {CircleUser, Menu, Package2, Search} from "lucide-react";
+import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
+import {Button} from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
 import {
     DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
+    DropdownMenuContent, DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+    DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+import Image from "next/image";
+import backgroundImage from "@/public/pexels-frans-van-heerden-201846-1022692 (1).jpg";
+import React from "react";
 
-export default function V0Layout({
+export default function V2Layout({
     children,
 }: {
     children: React.ReactNode
 }) {
     return <div className="flex min-h-screen w-full flex-col">
-        <header className="sticky top-0 flex h-16 items-center gap-4 bg-background px-4 md:px-6">
-            <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+        <div className="absolute inset-0 z-0">
+            <Image src={backgroundImage} alt="background" loading="lazy" layout="fill" priority={false}/>
+        </div>
+        <header className="z-10 sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+            <nav
+                className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
                 <Link
                     href="#"
                     className="flex items-center gap-2 text-lg font-semibold md:text-base"
                 >
-                    <Package2 className="h-6 w-6" />
+                    <Package2 className="h-6 w-6"/>
                     <span className="sr-only">Acme Inc</span>
                 </Link>
                 <Link
                     href="#"
-                    className="text-muted-foreground transition-colors hover:text-foreground"
+                    className="text-foreground transition-colors hover:text-foreground"
                 >
                     Dashboard
                 </Link>
@@ -55,7 +61,7 @@ export default function V0Layout({
                     href="#"
                     className="text-muted-foreground transition-colors hover:text-foreground"
                 >
-                    Settings
+                    Analytics
                 </Link>
             </nav>
             <Sheet>
@@ -65,7 +71,7 @@ export default function V0Layout({
                         size="icon"
                         className="shrink-0 md:hidden"
                     >
-                        <Menu className="h-5 w-5" />
+                        <Menu className="h-5 w-5"/>
                         <span className="sr-only">Toggle navigation menu</span>
                     </Button>
                 </SheetTrigger>
@@ -75,13 +81,10 @@ export default function V0Layout({
                             href="#"
                             className="flex items-center gap-2 text-lg font-semibold"
                         >
-                            <Package2 className="h-6 w-6" />
+                            <Package2 className="h-6 w-6"/>
                             <span className="sr-only">Acme Inc</span>
                         </Link>
-                        <Link
-                            href="#"
-                            className="text-muted-foreground hover:text-foreground"
-                        >
+                        <Link href="#" className="hover:text-foreground">
                             Dashboard
                         </Link>
                         <Link
@@ -102,8 +105,11 @@ export default function V0Layout({
                         >
                             Customers
                         </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-foreground">
-                            Settings
+                        <Link
+                            href="#"
+                            className="text-muted-foreground hover:text-foreground"
+                        >
+                            Analytics
                         </Link>
                     </nav>
                 </SheetContent>
@@ -111,7 +117,7 @@ export default function V0Layout({
             <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
                 <form className="ml-auto flex-1 sm:flex-initial">
                     <div className="relative">
-                        <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                        <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground"/>
                         <Input
                             type="search"
                             placeholder="Search products..."
@@ -122,21 +128,25 @@ export default function V0Layout({
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Button variant="secondary" size="icon" className="rounded-full">
-                            <CircleUser className="h-5 w-5" />
+                            <CircleUser className="h-5 w-5"/>
                             <span className="sr-only">Toggle user menu</span>
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                        <DropdownMenuSeparator />
+                        <DropdownMenuSeparator/>
                         <DropdownMenuItem>Settings</DropdownMenuItem>
                         <DropdownMenuItem>Support</DropdownMenuItem>
-                        <DropdownMenuSeparator />
+                        <DropdownMenuSeparator/>
                         <DropdownMenuItem>Logout</DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
         </header>
-        {children}
+        <main className="flex-grow flex items-stretch p-4 z-20">
+            <div className="bg-background p-8 w-full sm:m-3 md:mx-4 lg:m-5 xl:m-6 2xl:m-8 flex flex-col justify-start">
+                {children}
+            </div>
+        </main>
     </div>
 }

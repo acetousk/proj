@@ -4,6 +4,7 @@ import withBundleAnalyzer from "@next/bundle-analyzer";
 const nextConfig = {
   output: 'export',
   basePath: '/proj',
+  images: { unoptimized: true },
   headers: async () => [
     {
       // cache riv files in the public folder
