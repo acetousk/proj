@@ -2,12 +2,13 @@ import React from 'react';
 import { Button } from "@/components/ui/button"
 import { CircleUserRound, Grid, Zap, Wifi, Search } from "lucide-react"
 import Link from "next/link";
+import Image from "next/image";
 
 const ResponsiveLayout = () => {
     return (
         <div className="relative min-h-screen">
             <div className="fixed inset-0 z-0">
-                <img
+                <Image
                     src="https://images.pexels.com/photos/2693212/pexels-photo-2693212.png?cs=srgb&dl=pexels-anniroenkae-2693212.jpg&fm=jpg&w=1920&h=1440"
                     alt="Background"
                     className="w-full h-full object-cover"

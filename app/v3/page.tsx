@@ -1,10 +1,11 @@
 import React from 'react';
+import Image from "next/image";
 
 const ResponsiveLayout = () => {
     return (
         <div className="relative min-h-screen">
             <div className="fixed inset-0 z-0">
-                <img
+                <Image
                     src="https://images.pexels.com/photos/1022692/pexels-photo-1022692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt="Background"
                     className="w-full h-full object-cover"
